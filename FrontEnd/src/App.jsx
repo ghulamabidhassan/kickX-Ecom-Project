@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import "./Style Modules/prodcutpage.css";
 import ClientSharedHomePage from "./components/client/ClientSharedHomePage";
 import ClientHomePage from "./components/client/ClientHomePage";
 import ClientProductPage from "./components/client/ClientProductPage";

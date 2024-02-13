@@ -1,0 +1,134 @@
+.client-product-page {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 2em;
+}
+
+.client-product-page > .left {
+  width: 100%;
+  /* background-color: blue; */
+}
+
+.client-product-page > .right {
+  width: 70%;
+  /* background-color: yellow; */
+  padding: 2em;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 1.5em;
+}
+
+.left > div:nth-child(1) {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.left > div:nth-child(1) > img {
+  height: 10em;
+  width: 10em;
+  background-color: rgba(218, 212, 212, 0.253);
+  border: 1px solid black;
+}
+
+.left > div:nth-child(2) {
+  /* background-color: pink; */
+  width: 100%;
+  background-color: rgba(218, 212, 212, 0.253);
+}
+
+.left > div:nth-child(2) > img {
+  object-fit: cover;
+}
+
+.right > * {
+  margin: 0.75em 0;
+}
+
+.desc {
+  line-height: 1.5em;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+.sub-title {
+  font-size: 0.9em;
+}
+
+.right > .variants {
+  display: flex;
+  column-gap: 1em;
+  justify-content: space-between;
+}
+
+.variants > img {
+  height: 4em;
+  /* background-color: blue; */
+  border-radius: 1em;
+  margin: 0.5em 0;
+  border: 1px solid black;
+  background-color: rgba(218, 212, 212, 0.253);
+  object-fit: contain;
+}
+
+.sizes {
+  display: flex;
+  column-gap: 1em;
+  margin: 1em 0;
+}
+
+.sizes > span {
+  height: 2.5em;
+  width: 100%;
+  padding: 0.75em;
+  border-radius: 0.5em;
+  /* background-color: gray; */
+  background-color: rgba(218, 212, 212, 0.253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  border: 1px solid transparent;
+}
+
+.sizes > span:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.add-to-cart-parent {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+  column-gap: 1em;
+  align-items: center;
+  margin: 1.5em 0;
+}
+
+.add-to-cart {
+  padding: 1em 3em;
+  border-radius: 1em;
+  background-color: black;
+  color: white;
+  transition: 300ms ease-in-out;
+}
+
+.add-to-cart:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.icon-heart {
+  font-size: 1.5em;
+}
