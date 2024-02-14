@@ -642,6 +642,12 @@
   cursor: pointer;
 }
 
+.shop-page-search {
+  display: flex;
+  padding: 0 2.5em;
+  justify-content: space-between;
+}
+
 /* last line of style */
 
 @keyframes logoblur {

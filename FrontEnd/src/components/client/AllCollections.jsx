@@ -1,7 +1,7 @@
 import { ShoppingOutlined, HeartOutlined } from "@ant-design/icons";
 import ProductImage from "../../../public/shoetransparent.png";
 
-const AllCollections = ({ name }) => {
+const AllCollections = ({ name, image, title, price, discover, heading }) => {
   return (
     <div
       style={{ padding: "0em 3em", margin: "2em 0em" }}
@@ -24,21 +24,17 @@ const AllCollections = ({ name }) => {
           }}
           className="discover"
         >
-          Discover All
+          {discover}
         </h4>
       </div>
       <div className="all-collection-items">
         {Array.from({ length: 12 }, (_, idx) => {
           return (
             <div key={idx} className="all-collection-item">
-              <img
-                className="all-collection-item-image"
-                src={ProductImage}
-                alt=""
-              />
+              <img className="all-collection-item-image" src={image} alt="" />
               <div className="all-collection-item-name">
-                <h5>Nike Air Max 270 React</h5>
-                <h4>$280.00</h4>
+                <h5>{title}</h5>
+                <h4>${price}</h4>
               </div>
               <div className="absolute-parent">
                 <div className="cart-icon-box">
