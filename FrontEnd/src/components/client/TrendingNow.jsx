@@ -1,4 +1,5 @@
 import PopularCollection from "../../../public/shoetrans.png";
+import Tshirt from "../../../public/tshirt.png";
 
 const TrendingNow = () => {
   return (
@@ -30,11 +31,7 @@ const TrendingNow = () => {
         {Array.from({ length: 2 + 1 }, (_, idx) => {
           return (
             <div key={idx} className="collection-item">
-              <img
-                className="collection-item-image"
-                src={PopularCollection}
-                alt=""
-              />
+              <img className="collection-item-image" src={Tshirt} alt="" />
               <div className="popular-collection-item-name">
                 <h5>Nike Air Max 270 React</h5>
                 <h4>$280.00</h4>

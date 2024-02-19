@@ -1,5 +1,6 @@
 import { ShoppingOutlined } from "@ant-design/icons";
 import PopularCollectionImg from "../../../public/shoetrans.png";
+import Tshirt from "../../../public/tshirt.png";
 
 export const PopularCollection = () => {
   return (
@@ -31,11 +32,7 @@ export const PopularCollection = () => {
         {Array.from({ length: 3 }, (_, idx) => {
           return (
             <div key={idx} className="collection-item">
-              <img
-                className="collection-item-image"
-                src={PopularCollectionImg}
-                alt=""
-              />
+              <img className="collection-item-image" src={Tshirt} alt="" />
               <div className="popular-collection-item-name">
                 <h5>Nike Air Max 270 React</h5>
                 <h4>$280.00</h4>

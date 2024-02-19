@@ -6,6 +6,7 @@ import AllCollections from "./AllCollections";
 import Showrooms from "./Showrooms";
 import MemberContainer from "./MemberContainer";
 import DiscoverAll from "./DiscoverAll";
+import Tshirt from "../../../public/tshirt.png";
 
 const ClientHomePage = () => {
   return (
@@ -14,7 +15,12 @@ const ClientHomePage = () => {
       <TopBrands />
       <PopCollection />
       <TrendingNow />
-      <AllCollections name="All Collection" />
+      <AllCollections
+        name="All Collection"
+        image={Tshirt}
+        price="150.00"
+        title="Nike T Shirt for Men"
+      />
       <DiscoverAll />
       <Showrooms />
       <MemberContainer />
